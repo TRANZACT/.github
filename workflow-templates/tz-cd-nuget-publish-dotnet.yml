@@ -1,0 +1,18 @@
+name: Continous Deployment (.Net)
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+    - develop
+    - main
+
+  workflow_dipatch:
+
+jobs:
+  publish:
+    uses: TRANZACT/TzDigital.GitHub.Workflows/.github/workflows/increment-version-on-merge.yml@main
+    with:
+      src-dir: '.src/${{ github.event.repository.name }}'
+      project: ${{ github.event.repository.name }}
+      package-name: ${{ github.event.repository.name }}

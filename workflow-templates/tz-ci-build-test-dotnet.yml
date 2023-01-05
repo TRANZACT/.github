@@ -1,0 +1,14 @@
+name: Continous Integration (.Net)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build-and-test:
+    uses: TRANZACT/TzDigital.GitHub.Workflows/.github/workflows/build-and-test-dot-net.yml@main
+    with:
+      src-dir: '.src/${{ github.event.repository.name }}'
+      project: ${{ github.event.repository.name }}
+      test-dir: '.test/${{ github.event.repository.name }}'
+      test-project: '${{ github.event.repository.name }}.Test'
