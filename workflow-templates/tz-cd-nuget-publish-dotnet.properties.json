@@ -2,11 +2,10 @@
     "name": "Tranzact Continous Deployment (.Net)",
     "description": "Publish a project to the organization nuggets feed.",
     "categories": [
-        "c#",
-        ".net"
+        "C#"
     ],
     "filePatterns": [
-        ".sln",
-        ".csproj"
+        ".sln$",
+        ".csproj$"
     ]
 }
