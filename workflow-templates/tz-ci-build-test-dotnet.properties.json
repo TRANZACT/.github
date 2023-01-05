@@ -1,0 +1,12 @@
+{
+    "name": "Tranzact Continous Integration (.Net)",
+    "description": "Runs two jobs. One builds the project. If sucess, runs dotnet test in a test project.",
+    "categories": [
+        "c#",
+        ".net"
+    ],
+    "filePatterns": [
+        ".sln",
+        ".csproj"
+    ]
+}
