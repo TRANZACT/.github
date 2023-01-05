@@ -5,7 +5,7 @@
         "C#"
     ],
     "filePatterns": [
-        ".sln",
-        ".csproj"
+        ".sln$",
+        ".csproj$"
     ]
 }
