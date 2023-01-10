@@ -7,7 +7,7 @@ on:
     - develop
     - main
 
-  workflow_dipatch:
+  workflow_dispatch:
 
 jobs:
   publish:
